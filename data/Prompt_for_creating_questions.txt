@@ -1,47 +1,3 @@
-.1 History of Learning and Testing
-
-The progress of human civilization and our goals of disseminating and receiving information are reflected in the history of learning and testing, which extends back thousands of years. The development of this history can be imagined through a series of crucial stages that have helped to lay the foundation for the modern system of education and assessment of knowledge.
-
-
-
-Oral Heritage and Craftsmanship: Since ancient times, humans have used oral transmission of knowledge and experience. Hunters, craftsmen, and priests passed on their knowledge to the next generations through oral traditions and stories. Mastery was passed from teacher to pupil through a long and intensive learning process.
-
-Ancient Civilizations and Educational Institutions: The first educational institutions where knowledge was systematized and structured emerged in ancient civilizations, including ancient Egypt and China. Students studied various subjects, including mathematics, literature, religion, and philosophy, in temples, schools, and academies.
-
-The Middle Ages and Universities: The first universities were established in the Middle Ages and became centers of intellectual development. Medicine, law, and philosophy were among the many fields of study at universities such as Oxford and Bologna. At the universities, learning took the form of lectures, seminars, and discussions, and knowledge was tested through examinations and discussions.
-
-The Industrial Revolution and Schooling: In the 19th century, as industry developed and workers needed to be prepared for industrialization, there was a need for organized, mass education. States began to establish a system of compulsory education that gave students a basic education. Schools became universal institutions where children could receive training in subjects such as reading, writing, mathematics, and science. The development of curricula, textbooks, and standards promoted the standardization of education and uniformity in the transmission of knowledge.
-
-Along with the development of education came changes in testing systems. Written exams and tests became popular ways of assessing students' knowledge. They allowed for an unbiased assessment of students' academic performance and preparedness. Special instructions and rules were used to administer the exams, and the results were used to decide whether to advance a student's education or admit him or her to an institution of higher education.
-
-I write: create a question for the student on this paper
-you answer: "at what point did the first centers of education appear?"
-
-I am writing: Create a student question for this unit
-you answer: "how was learning done in the Middle Ages?"
-
-I am writing: Create a student question for this course article.
-you answer: "what made it possible to fairly evaluate students' knowledge?"
-
-I am writing: create a question for a student about this project
-you answer: "when did the need for mass education arise?"
-
-I am writing: create a question for a student about this article
-you answer: "how did the oral heritage and mastery phase of education take place?"
-
-I am writing: create a question for the student on this article
-you answer: "What knowledge was transmitted through oral heritage and craftsmanship?"
-
-I am writing: Create a question for the student for this article.
-you answer: "What changes have occurred in testing systems along with the development of education?"
-
-I am writing: create a question for the student on this article
-you answer: "What subjects were studied in the first educational institutions of ancient civilizations?"
-
-I am writing this: Create a student question for this article.
-you answer: "What stages in the development of learning and testing can be distinguished in history?"
-
-
 Lesson 6.
 Lists. Working with strings.
 
@@ -146,29 +102,219 @@ https://docs.python.org/3/library/string.html#format-examples
 	Task "Reply from server".
 	Task "Reconstruct Expression".
 
-and now create questions based on this text when I write you "create a student question on this paper"
+Now when I write "create 5 questions on this article," you create 5 questions for me. You cannot write the same questions. Here's an example of performance:
+create 5 questions on this article
+What is the difference between a list and a tuple in python? 
 
-you don't have to answer that:
-create a student question on this paper": What are the advantages of using the format() method for working with strings?"
+What method is used to add an item to a list?
 
-create a student question on this paper": How is a list initialized with preset values?
+What are some ways to extend a list?
 
-create a student question on this paper: What methods can be used to add items to a list?
+What does this code print([5] * 20) print?
 
-create a student question on this paper: How can a particular item be accessed in a list?
+How does negative indexing work in lists?
 
-create a student question on this paper: How can a string be converted into a list?"
+create 2 questions on this article
+What does the split method take as an argument?
 
-create a student question on this paper: "you answer: "What are the uses of slices in lists?""
+Solve a python problem: Remove the dots from the entered IP address. Output first four numbers separated by a space and then the sum of the resulting numbers.
+Sample Input:
+192.168.0.1
+Sample Output:
+192 168 0 1
+361
 
-create a student question on this paper": What can be used to join a list of strings into a single string?"
+create 3 questions on this article
+What is the method used to reverse a string?
 
-there is no need to put a colon at the beginning
+How can you refer to the last item in a list?
 
-it's the right thing to do:
-create a student question on this paper
-What is the difference between the split() and join() methods?
+What does the join method do?
 
-create a student question on this paper
-What scenarios of working with string formatting are possible?
+create 4 questions on this article
+What is the main difference between tuples and lists?
 
+What type of objects can be in a list?
+
+How can you find the length of a list?
+
+Is it possible to create two dimensional lists?
+
+create 6 questions on this article
+What does the format method do?
+
+What is an example of string formatting?
+
+How can you change the order of arguments when using the format method?
+
+What is the purpose of the extend method?
+
+What is the output of s = "Any string"; list(s)?
+
+What data type is returned when the split method is called?
+
+
+Now write questions related to the article written below
+
+Lesson 5.
+The while loop and logical variables.
+
+Lesson plan
+Logic variables
+The while loop
+Break and continue operators
+"Recall Everything: Learning Algorithms
+Logic variables
+To continue our exploration of data types in Python (so far we've covered integers, real numbers, strings, and tuples), we'll focus on logical variables. Logic, or Boolean (after the mathematician George Boole), refers to variables that can take only two values, 1 or 0, which are written as True or False respectively. This is convenient because it takes less memory, and it is also convenient to store the truth or falsity of a statement in this representation. For example, you develop an online game and you need to display whether a player is online at a given time. You can have a logical variable is_online and change it to 1 when the player logs in and 0 when he logs out. 
+If you think of comparison operators, you know that they return a logical expression. You can test this by defining variables a and b and writing print(a == b).
+The "Pied Piper" problem
+The while loop
+Recall that we used the for loop when we knew exactly how many times we wanted to repeat the code referring to the loop. However, the while loop allows us to iterate as long as the condition we set is met. A sample use in general looks like this:
+while condition:
+    code block
+
+When the while loop is executed, the condition is checked first. If it's false, the loop is stopped, and if it's true, a block of code is executed, after which the condition is checked again. This continues until the condition is true.
+Let's count the number of digits of a number using the while loop:
+n = int(input())
+length = 0
+while n > 0:
+	n //= 10
+	length += 1
+print("Number length -", length)
+
+	
+	The task "Password validation. Step 2."
+	The "Spontaneous Sum" task.
+	The "Writer's Inspiration. Stage 1."
+	Task "Learning to save spends".
+
+break, continue, and else
+The break and continue operators are used to control the code in the while loop. As soon as the interpreter reaches break in the while loop, there is an immediate exit from the loop. You can put break, for example, in a condition inside a loop.
+languages = ("Java", "Python", "C++", "PHP", "Pascal", "Ruby")
+i = 0
+while i < len(languages):
+    if languages[i] == "PHP":
+        print("NO!")
+	  break
+    print("Cool!")
+    i += 1 
+
+	
+	The continue statement immediately begins the next iteration of the loop, bypassing the rest of the code in the block.
+for i in range(10):
+    print('Loading... Wait.')
+    if i == 3:
+        print('Oops... Error. Pretend it never happened.')
+        continue
+    print('uploaded', i * 10, 'percent')
+print('Loading completed!')
+
+
+else is used in turn with break. Code placed in else is NOT executed if the loop is exited because of break.
+	These operators are used rather seldom because they can almost always be replaced by a smart condition, but sometimes their use is still justified.
+
+	The Hunt of Pied Piper" task
+
+Algorithms
+	At the moment, knowledge of algorithms is not a decisive factor for many programmers that determines the possibility/impossibility to successfully complete a task. There are several reasons for this: first, many libraries (an extensive set of tools - we will go through that in the second half of the year) provide quick access to basic functions and features, so many decide not to reinvent the wheel and "fill their heads" with things they will probably never use, and second, many developers are not faced with situations where algorithms are needed at all (they include front-enders, database administrators, 1C programmers). Hence the argument "which is better?" concerning industrial (development of applications for the user) and olympic programming. Obviously this question can not be answered unambiguously. It is up to you to learn or not to learn algorithms. We will only touch a few fundamental algorithms, which are necessary to know. Having learned the algorithm, you can implement it in any programming language, knowing its syntax.
+Read about different points of view on the subject here:
+https://habr.com/post/279453/
+https://habr.com/post/279651/
+Below is a cheat sheet of the main algorithms:
+Finding the maximum
+numbers = (1, 2, 3, ..., n) # tuple of numbers
+max_number = numbers[0]
+i = 1
+while i < len(numbers):
+    if numbers[i] > max_number:
+        max_number = numbers[i]
+    i += 1
+print(max_number)
+
+	
+	Find minimum
+numbers = (1, 2, 3, ..., n) # tuple of numbers
+min_number = numbers[0]
+i = 1
+while i < len(numbers):
+    if numbers[i] < min_number:
+        min_number = numbers[i]
+    i += 1
+print(min_number)
+
+
+	Finding the sum
+numbers = (1, 2, 3, ..., n) # tuple of numbers
+sum = 0
+for number in numbers:
+    sum += number
+print(sum)
+
+
+	Check for simplicity
+d = 2
+while d * d <= n and n % d != 0:
+    d += 1
+print(d * d > n)
+Finding NOD (Euclidian algorithm)
+
+a, b = int(input()), int(input())
+while b != 0:
+    a, b = b, a % b
+print(a)
+
+create 3 questions on this article
+When can we not use the for loop?
+
+What is the advantage of the while loop over the for loop? 
+
+What is the Euclidian algorithm used for?
+
+create 9 questions on this article
+
+What is the purpose of the break and continue operators?
+
+What data type are logic variables?
+
+What are logic variables used for?
+
+What happens when a comparison operator is used?
+
+What will the variable length be after the while loop? 
+n = 2 ** 8
+length = 0
+while n > 0:
+	n //= 10
+	length += 1
+
+Describe how the while loop works 
+
+What is the print statement used in the while loop example?
+
+How does else work after the while loop?
+
+
+you should only write questions on the most recent article
+
+the following is an incorrect answer, since the material was taken from the topmost article:
+create 4 questions on this article
+What is an example of an algorithm?
+
+What does the while loop allow you to do?
+
+What operators are used to control the code in the while loop?
+
+What is the output of the following code: 
+numbers = (1, 2, 3)
+max_number = numbers[0]
+i = 1
+while i < len(numbers):
+    if numbers[i] > max_number:
+        max_number = numbers[i]
+    i += 1
+print(max_number)
+
+
+don't talk about the cheat sheet, you can make up questions based on the code
+
+create 3 questions on this article
