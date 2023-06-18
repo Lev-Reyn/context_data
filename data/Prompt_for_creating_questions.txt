@@ -1,0 +1,175 @@
+.1 History of Learning and Testing
+
+The progress of human civilization and our goals of disseminating and receiving information are reflected in the history of learning and testing, which extends back thousands of years. The development of this history can be imagined through a series of crucial stages that have helped to lay the foundation for the modern system of education and assessment of knowledge.
+
+
+
+Oral Heritage and Craftsmanship: Since ancient times, humans have used oral transmission of knowledge and experience. Hunters, craftsmen, and priests passed on their knowledge to the next generations through oral traditions and stories. Mastery was passed from teacher to pupil through a long and intensive learning process.
+
+Ancient Civilizations and Educational Institutions: The first educational institutions where knowledge was systematized and structured emerged in ancient civilizations, including ancient Egypt and China. Students studied various subjects, including mathematics, literature, religion, and philosophy, in temples, schools, and academies.
+
+The Middle Ages and Universities: The first universities were established in the Middle Ages and became centers of intellectual development. Medicine, law, and philosophy were among the many fields of study at universities such as Oxford and Bologna. At the universities, learning took the form of lectures, seminars, and discussions, and knowledge was tested through examinations and discussions.
+
+The Industrial Revolution and Schooling: In the 19th century, as industry developed and workers needed to be prepared for industrialization, there was a need for organized, mass education. States began to establish a system of compulsory education that gave students a basic education. Schools became universal institutions where children could receive training in subjects such as reading, writing, mathematics, and science. The development of curricula, textbooks, and standards promoted the standardization of education and uniformity in the transmission of knowledge.
+
+Along with the development of education came changes in testing systems. Written exams and tests became popular ways of assessing students' knowledge. They allowed for an unbiased assessment of students' academic performance and preparedness. Special instructions and rules were used to administer the exams, and the results were used to decide whether to advance a student's education or admit him or her to an institution of higher education.
+
+I write: create a question for the student on this paper
+you answer: "at what point did the first centers of education appear?"
+
+I am writing: Create a student question for this unit
+you answer: "how was learning done in the Middle Ages?"
+
+I am writing: Create a student question for this course article.
+you answer: "what made it possible to fairly evaluate students' knowledge?"
+
+I am writing: create a question for a student about this project
+you answer: "when did the need for mass education arise?"
+
+I am writing: create a question for a student about this article
+you answer: "how did the oral heritage and mastery phase of education take place?"
+
+I am writing: create a question for the student on this article
+you answer: "What knowledge was transmitted through oral heritage and craftsmanship?"
+
+I am writing: Create a question for the student for this article.
+you answer: "What changes have occurred in testing systems along with the development of education?"
+
+I am writing: create a question for the student on this article
+you answer: "What subjects were studied in the first educational institutions of ancient civilizations?"
+
+I am writing this: Create a student question for this article.
+you answer: "What stages in the development of learning and testing can be distinguished in history?"
+
+
+Lesson 6.
+Lists. Working with strings.
+
+Lesson plan.
+Lists .
+The split() and join() methods
+Slices
+String formatting
+Lists
+	When we introduced tuples, we talked about how they are immutable containers of different data types. Today we'll talk about a powerful tool, a data type called a list. Lists are also used to store data, but unlike tuples, they are immutable. This means that you can add, delete, as well as replace and sort the elements of a list. An empty list is declared with square brackets.
+	a = []
+	You can also initialize a list with preset values:
+	even_numbers = [2, 4, 6, 8, 10]
+	There are several ways to extend our list. Let's look at some of them:
+Add an item to the end of the list. The append() method is applied to the list, and the item to be added is specified in brackets.
+	even_numbers.append(12)
+	Note: The append() instruction differs from the familiar functions. Append() is "appended" to an object (in this case, a list) with a point. Commands of this kind are called methods. We will speak about it in more detail later.
+
+ 2) List expansion.
+	even_numbers + [12, 14, 16, 18, 20]
+	A more preferred implementation using the extend() method:
+	even_numbers.extend([12, 14, 16, 18, 20])
+      3) Getting a list with n fixed elements.
+      ones = [1] * 100
+	# get a list of a hundred ones
+
+
+A specific list item can be accessed the same way as in tuples - by a numeric index. Once again, note that indexing starts with zero. However, referring to an element of the list by an index, it is possible not only to look at it, but also to replace it with another element.
+powers_of_ten = [10, 100, 1000]
+powers_of_ten.append(42) # we made a mistake and did not add a degree of ten to the list
+powers_of_ten[-1] = 10 ** 4 # we correct the error
+
+
+	In Python, you can use negative indices to refer to elements in a collection (for example, characters in a string or elements in a tuple/list). In the example above, we used an index of -1, which is a way of referring to the last item in a list. Similarly, you can use -2, -3, and so on.
+
+	Try replacing a character in a string in a similar way. What will happen?
+
+	Interesting:
+A particular character in a string can also be accessed by index. For example:
+     s = "Hello!"
+     print(s[1], s[-2]) # will print "e" first, then "o"
+
+     2) Just as a string can be converted to a tuple using tuple(), you can convert it to a list using list():
+
+       s = "Any string"
+	print(list(s))  # will print ["A", "n", "y", " ", "s", "t", "r", "i", "n", "g"]
+
+It is worth noting that the elements of a list can be objects of any data type, and it is not necessary that the elements be of only one type. You can create two-dimensional lists ("list within a list"), three-dimensional lists, and even n-dimensional lists.
+
+The "Keep Even" Task
+The "Median" task
+The "Process a list" task.
+split() and join()
+Often, when a string and a list are used in conjunction, split() and join() methods are used (remember that we have already met one method, append()).
+	The split() method applies to strings and "splits" (from the word split) a given string into a list of substring strings. You can pass a substring in parentheses to split the string (if you don't pass anything, the string is split by spaces). While append() changes the list, split() returns the value, the list (just as max(), for example, returns a number).
+s = "This is a string with spaces"
+s = s.split()
+# s = ["This", "is", "a", "string", "with", "spaces"]
+
+
+The join() method is its opposite - it returns a string "joined" (or "glued") from a list of strings through some given string. Suppose we have a list of strings s, taken from the previous example. Let's modify the string:
+
+s = "!".join(s)
+# s = "This!is!a!string!with!spaces"
+
+
+	We "joined" the substring using the "!" symbol.
+
+The "Slow down, I'm writing it down!" task.
+	Task "A politician's cheat sheet."
+The Boy Who Cried Python" task.
+	Task "Login for registration."
+	"Split IP" Task.
+	The "Basic Lessons" Task.
+
+	The use of slices in lists is similar to the above examples.
+	In general, their use can be represented as: s[start:stop:step]. If you look closely, a similar concept can be observed in the for loop (actually, you can do without slices by using loops, but it is much less comfortable).
+
+	The "Aggressive Marketing" Task
+	The "Primitive Cipher" Task
+String formatting
+	It's impossible not to mention the flexible and useful string formatting tool. It is much more convenient than the usual concatenation and is used in most cases. The method format() allows you to insert into a pre-prepared string the variables you need in
+in the order you want. You write a plain string in quotation marks, but you insert curly brackets instead of the values you want to insert. The format() method is applied to this string; the parentheses indicate the arguments to be inserted in place of the curly braces. Let's solve the "Favorite Book" problem (https://stepik.org/lesson/142208/step/8?unit=116414) using format():
+	author, book = input(), input()
+      print("{} the bestselling author {} has a new book out! Hurry up and buy it from Pythonist!".format(author, book))
+
+ 	Other scenarios for working with format are also possible. For example, you can change the order of the arguments.
+    first, second, third = input(), input(), input()
+    # is the usual order, you don't have to write the indexes in curly brackets
+    print("Recipe: add {0} first, then {1}, then {2} at the end".format(first, second, third))
+    # changed the order
+    print("Recipe: add {2} first, then {0}, then {1} at the end".format(first, second, third))
+
+
+
+ 	See the documentation for a complete list of use cases:
+https://docs.python.org/3/library/string.html#format-examples
+
+	Homework:
+	Squares in Reverse Order Task.
+	The "Literate Logging" task
+	Task "Reply from server".
+	Task "Reconstruct Expression".
+
+and now create questions based on this text when I write you "create a student question on this paper"
+
+you don't have to answer that:
+create a student question on this paper": What are the advantages of using the format() method for working with strings?"
+
+create a student question on this paper": How is a list initialized with preset values?
+
+create a student question on this paper: What methods can be used to add items to a list?
+
+create a student question on this paper: How can a particular item be accessed in a list?
+
+create a student question on this paper: How can a string be converted into a list?"
+
+create a student question on this paper: "you answer: "What are the uses of slices in lists?""
+
+create a student question on this paper": What can be used to join a list of strings into a single string?"
+
+there is no need to put a colon at the beginning
+
+it's the right thing to do:
+create a student question on this paper
+What is the difference between the split() and join() methods?
+
+create a student question on this paper
+What scenarios of working with string formatting are possible?
+
+create a student question on this paper
