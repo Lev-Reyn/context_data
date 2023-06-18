@@ -317,4 +317,3 @@ print(max_number)
 
 don't talk about the cheat sheet, you can make up questions based on the code
 
-create 3 questions on this article
