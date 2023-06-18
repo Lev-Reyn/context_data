@@ -172,4 +172,3 @@ What is the difference between the split() and join() methods?
 create a student question on this paper
 What scenarios of working with string formatting are possible?
 
-create a student question on this paper
