@@ -317,3 +317,97 @@ print(max_number)
 
 don't talk about the cheat sheet, you can make up questions based on the code
 
+
+Now you have to create questions on the following article, which is written below:
+When you connect a device to the network and the Internet, organizations open the door to hackers who can penetrate their network and cause damage. There are many organizations that only use a firewall on their network and therefore think that both their internal network and their users are protected from Internet threats. The firewall, as the only network device deployed between the internal network and the Internet, is simply the first layer of security for the entire organization. Many people wonder if a firewall is not enough to filter malicious inbound and outbound traffic.
+
+Years ago, the answer would have been an unequivocal yes. However, since hackers are always looking for new strategies to penetrate the network, we cannot rely on just one layer of security to protect our assets. The answer to this question is no longer a clear "yes" simply because there are many types of traffic that use insecure network protocols to exchange messages between source and destination.
+
+Below are just a few of the many questions a cybersecurity professional should ask:
+
+Does the organization actively monitor Domain Name System (DNS) messages for threats?
+Does the organization have any security solutions in place to protect incoming and outgoing company emails?
+If a cyberattack occurs on the network, are there systems in place to proactively block and alert the IT department?
+Does the organization have a dedicated security team or person to manage the overall security of the entire enterprise?
+Are there any security policies and technical controls in place to protect the internal network?
+Many security vendors use marketing strategies and buzzwords to influence potential customers to purchase their all-in-one security devices. The key point that many uninformed customers miss is how the security solution or product will protect all users and all types of traffic, protect them when using insecure protocols, and so on. An example would be the use of endpoint protection. You can consider this solution as antivirus software with centralized management for the administrator. Although many endpoint protection solutions offer advanced features. This is still the first layer of security that simply protects the host.
+
+Not all endpoint protection solutions or anti-viruses protect against threats such as email. Simply put, an organization cannot rely on just one approach to protect its assets, it needs a layered approach known as Defense in Depth (DiD).
+
+The DiD strategy implies that a single layer of security should not be used as the only countermeasure against cyberattacks. If this single layer fails to protect the network, then all (assets) will be open to hackers. DiD implements a layered approach to protect all assets from different types of cyberattacks, where if one layer cannot protect an asset, then there is another layer to provide security.
+
+This layering tactic was invented at the National Security Agency (NSA) as a comprehensive approach to information and electronic security. And originally, it is a military strategy that seeks to force an attacker to spend as much time as possible to overcome each layer of defense, rather than to prevent an adversary from attacking.
+
+The concept of Defense in Depth divides the organization of infrastructure defense into three controllable parts:
+
+Physical: This includes all measures to limit physical access to the IT infrastructure by unauthorized persons. For example, office security guards, access control systems, video surveillance cameras, alarms, telecommunication cabinets with locks, and so on.
+Technical: this includes all hardware and software information security products designed to control network access to information system objects, firewalls, anti-virus protection for workstations, proxy servers, authentication and authorization systems.
+Administrative: this includes all information security policies and procedures adopted by the organization. These documents are intended to regulate protection management, distribution and processing of critical information, the use of software and hardware in the company, as well as employee interaction with the information system, third-party organizations and other external entities.
+The tiered approach is like defending a king in his castle. If an attack occurs, the invaders will need to go through several layers of defense, including guards at the entrance and other obstacles, before they can get to the king (the asset).
+
+To better understand the importance of DiD, let's delve deeper into the three basic principles of information security, the so-called CIA triad:
+
+Confidentiality.
+Integrity
+Availability
+Each principle plays a vital role in the information security of any organization. In the following subsection, you will learn about the characteristics of confidentiality, integrity and availability, and how they are used in the industry to secure our networks.
+
+PRIVACY
+As more and more people connect to networks and share information, whether it's their private network at home, the corporate network at the office, or even the Internet, privacy is a major concern.
+
+Every day, organizations generate new data by sending and receiving messages between devices. Imagine an organization that uses email as its only messaging platform. Each person creates an e-mail message, which is data, and that data uses some storage space on the local system. When the recipient receives the email, it is stored on the recipient's computer. It is important that only those to whom the message is addressed receive it; outsiders should not see it.
+
+When this data is transmitted over the network, it can also be intercepted. So the security professional should also consider the following questions: Is the connection secure? Is the communication protocol secure? Is the network secure?
+Confidentiality ensures that messages and other data are kept secret from unauthorized persons or devices. In information technology, confidentiality comes in the form of data encryption. People use devices to perform tasks, whether it's sending email, downloading a file, or even sending a messenger message from a smartphone. It's important to always protect these messages.
+
+Data usually exists in the following states:
+
+Data at rest.
+Data in motion (in transit)
+Data in use.
+Data at rest is data that is not used by either the application or the system. They are currently stored on media, such as a hard disk drive (HDD) on a local or remote system. When data is dormant, it is vulnerable to attackers trying to either steal or alter it. Security professionals are implementing both authentication methods and encryption algorithms to protect any data at rest. An example is the use of BitLocker in Microsoft's Windows 10 operating system, which allows the administrator to create an encrypted container and then the user can place files in that special memory area and lock it.
+
+Once the contents of BitLocker are locked (closed) by the user, both the container and its contents are encrypted. Consequently, access is granted only if the user provides the correct credentials to open and decrypt the contents. If an attacker steals an encrypted container, they will not be able to view the contents because of the encryption of the data.
+
+Data in motion is defined as data that is transmitted between source and destination. Imagine that there are employees who work remotely or work in a remote location away from the office. These people may need to connect to the corporate network frequently to access network resources, such as when accessing or working with documents on a file server. As cybersecurity professionals, we need to be aware of the types of protections or security mechanisms in place to protect the data transmitted between the user's device and the file server. In addition, devices send and receive messages almost every second, and some of these messages are exchanged using insecure protocols that allow an attacker to intercept messages (data) as they are transmitted over the network. If the data is transmitted over the network in an unencrypted format, an attacker can see the entire contents in plain text and collect sensitive information such as logins and passwords.
+These are just a few possible situations that can arise when data is in motion. Some recommended actions are to use secure network protocols whenever possible and ensure that remote employees, use a virtual private network (VPN) to encrypt the traffic between the user device and the corporate network.
+
+To better understand the need for a VPN, imagine that an organization has multiple branch offices and wants to "share" resources from the head office to the remote branch office. Using the Internet is not secure, especially for transferring corporate data between branches. One solution might be to use a Wide Area Network (WAN) provided by an Internet Service Provider (ISP). If an organization decides to use a WAN, it means that you will have to pay for this service, and for some companies, this solution may not be affordable. Alternatively, if the organization has an Internet connection and firewalls are in each office, a security professional can set up a VPN between the two firewall devices. This type of VPN is known as a site-to-site VPN.
+
+The following figure shows a representation of a site-to-site VPN:
+As shown in the figure, a site-to-site VPN establishes a secure, encrypted connection between the head office and remote branch offices over the Internet. Consequently, any messages that move between offices are encrypted and sent through the VPN tunnel, protecting the messages from unauthorized users.
+
+There is also another type of VPN - remote access VPN. This type allows the user to establish a VPN tunnel between an endpoint device, such as a laptop, and the organization's firewall. This type of VPN allows employees working at home or on the go to securely connect to the organization's network and access network resources. Keep in mind that a VPN client must be installed on the employee's device, which is used to establish a secure connection between the computer and the corporate firewall.
+
+The following figure shows an example of a remote access VPN:
+The data in use is the data that is currently being accessed or used by the application. In this state, the data is most vulnerable. As an example of usable data, imagine that you are opening a PDF document with a PDF reader application. Before the application can successfully open the PDF file, the document must be decrypted if the file is password protected. After entering the correct password, the document will be presented to the user in unencrypted form. It is important to keep the system and applications that access and/or use the data secure at all times.
+
+Thus, privacy is about protecting your assets from unauthorized persons or devices.
+
+PURPOSE
+Integrity plays an important role in our daily lives, it is the degree to which the parts are shaped, assembled, and show harmony in the relationship and interaction of the parts. It's a bit philosophical, but the same principle is needed in the network. Imagine that you received a letter from a friend through your local post office and upon opening it, there seems to be nothing wrong with its contents. As the recipient, you might assume that the contents of the letter were unchanged in the delivery process, but how can you verify if the contents have been changed by a person or device along the way? On a network, it is very important to ensure that data or messages are not changed in transit between source and recipient.
+Cybersecurity uses special hashing algorithms to help users and devices verify whether a message has or has not been altered in transmission. Hashing algorithms create a one-way cryptographic hash (digest, aka checksum), which is a mathematical representation of the message. This means that only this message can produce the same hash value. Hashing algorithms create a one-way function that makes it nearly impossible to change and determine the content of the message itself.
+
+The following figure shows the hashing process of a message:
+
+The hashing process
+As shown in the figure, the message goes through a cryptographic algorithm that creates a one-way hash function for the message. When a user or device wants to send a message to the recipient, both the message and its hash value are packaged together and sent over the network. When the recipient receives the incoming message, it performs its own hash function on the message and computes its hash value.
+
+The recipient then compares the hash value received from the sender with the hash value it calculated. If both hash values match, it means that the message was not modified during transmission and integrity is preserved. However, if the hashes do not match, it indicates that the message has been altered and the recipient will simply delete it. In addition, hashing also helps to ensure that the message has not been corrupted by any network faults or malfunctions.
+ACCESSIBILITY
+There are types of cyber attacks that block or make it difficult for legitimate users to access a resource. In other words, attackers try to disrupt the availability of data and resources. In cybersecurity, availability ensures that data and resources are always available to users and systems that are allowed access to those resources.
+
+A simple example of a cyber attack that can be used to disrupt network availability is the Distributed Denial of Service (DDoS) attack. This type of attack is launched from multiple geographic locations and targets a single system or network. The attacker sends massive amounts of legitimate requests or other types of traffic to the target, causing the system to overload and become unable to process requests from other users. The goal is to make the target system or network unusable or unavailable to other users.
+
+Cloudflare (www.cloudflare.com) provides unlimited protection against DDoS attacks for users. The administrator can migrate his or her DNS records to Cloudflare to manage DNS services. In this way, Cloudflare sits between the public server and the rest of the Internet. If DDoS traffic is directed at a resource from anywhere in the world, it will have to pass through the Cloudflare network, which will mitigate the attack.
+
+You may think that it is important for attackers to make sure that network resources and data are always available so that they can be hacked or stolen. But in fact, there are attackers whose goal is to make those resources no longer available to users.
+
+Just imagine an intruder hacking into the power management system of your city or neighborhood. If the hacker manages to shut down that system, there will be no electricity, and most consumers and organizations will be affected. In such situations, it is important that professionals implement security measures that can protect critical processes, systems and networks from hacking.
+COMBINING THE THREE PRINCIPLES
+Some organizations put some principles above others. For example, a company may focus more on protecting its data through various authentication and encryption systems. This principle focuses on privacy. Focusing on one component, such as privacy, more than the others will entail less attention to the others - integrity and/or availability.
+
+You might wonder: and what's the problem here? Imagine that an organization applies the most stringent security measures to prevent any unauthorized access to its systems and network. In order for an authorized user to gain access to these resources, they would need to provide perhaps multiple verifications of their identity, such as with multi-factor authentication (MFA), and even passwords to open files. As a result, access to the resources will be more difficult for everyone, including authorized users, so accessibility will suffer a bit.
+
+The following figure shows the triad of principles and the focus point in the center:
+The key is to always strike a balance when implementing confidentiality, integrity and availability in any system and network. It is important to pay equal attention to all major areas simply to ensure that no aspect of information security is lacking.
